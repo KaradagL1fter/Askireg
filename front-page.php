@@ -12,7 +12,7 @@ get_header();
         </a>
       </div>
       <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image: url(<?php echo get_template_directory_uri().'/assets/images/banner/breakfastviews.jpeg' ?>)">
+        <div class="slider-item" style="background-image: url(<?php echo get_template_directory_uri().'/assets/images/instfeed/bar.jpeg' ?>)">
           <div class="overlay"></div>
           <div class="container">
             <div class="row no-gutters slider-text align-items-center">
@@ -26,7 +26,7 @@ get_header();
           </div>
         </div>
 
-        <div class="slider-item" style="background-image: url(<?php echo get_template_directory_uri().'/assets/images/banner/view3.jpeg' ?>)">
+        <div class="slider-item" style="background-image: url(<?php echo get_template_directory_uri().'/assets/images/instfeed/floor.jpeg' ?>)">
           <div class="overlay"></div>
           <div class="container">
             <div class="row no-gutters slider-text align-items-center">
@@ -476,7 +476,15 @@ get_header();
                 >
                   <div class="col-md-8">
                     <div class="text">
-                      <h1>Askireg Hotel</h1>
+                      <!-- <h1>Askireg Hotel</h1> -->
+                      <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
+$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+
+if ( has_custom_logo() ) {
+	echo '<img   src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+} else {
+	echo '<h1>' . get_bloginfo('name') . '</h1>';
+}?>
                       <h4>Pülümür, Tunceli, Turkey - Mountain Hotel</h4>
                     </div>
                   </div>
@@ -818,4 +826,6 @@ get_header();
       </div>
     </section>
    
-    <?php 
+    <?php
+get_footer();
+?>

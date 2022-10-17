@@ -3,10 +3,9 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Roxandrea</h2>
+              <h2 class="ftco-heading-2">Hotel Askireg</h2>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+              Here, you'll find all the amenities you need to live a world-class vacation. Whether you're looking for winter activities or summer activities, we've got plenty to keep you entertained!
               </p>
               <ul
                 class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"

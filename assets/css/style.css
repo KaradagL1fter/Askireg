@@ -11938,7 +11938,7 @@ h5,
 }
 
 .aside-stretch {
-  background: #5ab2c6;
+  background: rgba(90, 178, 198, 0.6);
 }
 .aside-stretch:after {
   position: absolute;
@@ -11947,7 +11947,7 @@ h5,
   bottom: 0;
   content: '';
   width: 360%;
-  background: #5ab2c6;
+  background: rgb(90, 178, 198, 0.6);
 }
 video {
   object-fit: cover;
